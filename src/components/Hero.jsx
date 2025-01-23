@@ -1,6 +1,6 @@
 import React from "react";
 import profilepic from "../assets/ppic.png";
-
+import profile from "../assets/pprofile.png"
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { TypeAnimation } from "react-type-animation";
 import {
@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="my-auto">
           <img
             className="w-[800px] mx-auto h-auto hover:scale-105 transition-all duration-300"
-            src={profilepic}
+            src={profile}
             alt="profile pic"
           />
         </div>
@@ -66,7 +66,6 @@ const Hero = () => {
             className="mt-4 px-6 py-3 inline-block text-lg font-bold text-white bg-primary-color rounded-xl 
                cursor-pointer hover:bg-primary-color/80 hover:scale-110 transition-all duration-300 
                hover:shadow-lg"
-            style={{ pointerEvents: "auto" }} // Ensure the link is clickable
             download
           >
             Download Resume
@@ -130,7 +129,7 @@ const Hero = () => {
         </div>
 
         {/* Shiny Effect */}
-        <div className="absolute inset-0 overflow-hidden md:overflow-visible">
+        <div className=""> {/*absolute inset-0 overflow-hidden md:overflow-visible*/}
           <div className="">
             <ShinyEffect left={550} top={100} size={700} />
           </div>
